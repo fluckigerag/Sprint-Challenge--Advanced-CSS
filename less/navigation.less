@@ -1,1 +1,39 @@
 // Navigation code here
+.navigation {
+    width: 80%;
+    background-color: #F6F6F6;
+    margin-left: 150px;
+    margin-top: 20px;
+    @media @phone {
+        margin-left: 60px;
+    }
+    h1 {
+        width: 100%;
+        margin-left: 450px;
+        font-size: 4rem;
+        padding-top: 20px;
+        @media @phone {
+            margin-left: 50px;
+        }
+    }
+    nav {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+        margin-left: 300px;
+        @media @phone {
+            width: 100%;
+            margin-left: 0px;
+        }
+        a {
+            text-decoration: none;
+            color: #454A59;
+            font-weight: bold;
+            font-size: 1.5rem;
+            &:hover {
+                color: slategrey;
+            }
+        }
+    }
+}

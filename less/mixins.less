@@ -1,1 +1,28 @@
 // Mixins Here
+@phone: ~"(max-width: 500px)";
+
+.btn (@bg-color, @txt-color) {
+    background-color: @bg-color;
+    color: @txt-color;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    padding: 8px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    &:hover {
+        background-color: slategrey;
+        color: black;
+    }
+}
+
+.width () {
+    width: 80%;
+    margin-left: -25px;
+}
+
+.align () {
+    width: 100%;
+    text-align: justify;
+}
